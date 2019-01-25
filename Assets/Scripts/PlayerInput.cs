@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerMovement _movement;
+    private IMover _movement;
 
     private void Start() {
         _movement = GetComponent<PlayerMovement>();
