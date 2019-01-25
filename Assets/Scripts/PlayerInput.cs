@@ -6,13 +6,16 @@ public class PlayerInput : MonoBehaviour
 {
     private IMover _movement;
 
-    private void Start() {
+    private void Start()
+    {
         _movement = GetComponent<BasicMovement>();
     }
 
-    private void Update() {
-        var x = Input.GetAxis("Horizontal");
-        var y = Input.GetAxis("Vertical");
-        _movement.Move(new Vector2(x,y));
+    private void Update()
+    {
+        var x = Input.GetAxisRaw("Horizontal");
+        var y = Input.GetAxisRaw("Vertical");
+        var moveDir = new Vector2(x, y).normalized;
+        _movement.Move(moveDir);
     }
 }
