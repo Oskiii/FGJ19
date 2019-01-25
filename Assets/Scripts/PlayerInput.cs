@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     private IMover _movement;
+    private IGun _gun;
 
     private void Start()
     {
-        _movement = GetComponent<BasicMovement>();
+        _movement = GetComponent<IMover>();
+        _gun = GetComponentInChildren<IGun>();
     }
 
     private void Update()
@@ -17,5 +19,10 @@ public class PlayerInput : MonoBehaviour
         var y = Input.GetAxisRaw("Vertical");
         var moveDir = new Vector2(x, y).normalized;
         _movement.Move(moveDir);
+
+        var shouldShoot = Input.GetMouseButtonDown(0);
+        if(shouldShoot) {
+            _gun.Shoot();
+        }
     }
 }
