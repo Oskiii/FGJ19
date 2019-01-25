@@ -10,9 +10,16 @@ public class BasicGun : MonoBehaviour, IGun
     private Transform _muzzlePoint;
     [SerializeField]
     private float _shootForce = 1f;
+    [SerializeField]
+    private float _shootCooldown = 0.1f;
+    private float _lastShotTime = 0f;
 
     public void Shoot()
     {
+        if (Time.time < _lastShotTime + _shootCooldown) return;
+
+        _lastShotTime = Time.time;
+
         GameObject bullet = Instantiate(_bullet.gameObject, _muzzlePoint.position, Quaternion.identity);
         var bulletRb = bullet.GetComponent<Rigidbody2D>();
 

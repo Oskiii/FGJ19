@@ -20,8 +20,9 @@ public class PlayerInput : MonoBehaviour
         var moveDir = new Vector2(x, y).normalized;
         _movement.Move(moveDir);
 
-        var shouldShoot = Input.GetMouseButtonDown(0);
-        if(shouldShoot) {
+        var shouldShoot = Input.GetMouseButton(0);
+        if (shouldShoot)
+        {
             _gun.Shoot();
         }
     }
