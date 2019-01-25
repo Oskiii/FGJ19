@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour, IMover
+public class BasicMovement : MonoBehaviour, IMover
 {
     private Rigidbody2D _rb;
 
