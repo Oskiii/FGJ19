@@ -7,7 +7,7 @@ public class PlayerInput : MonoBehaviour
     private IMover _movement;
 
     private void Start() {
-        _movement = GetComponent<PlayerMovement>();
+        _movement = GetComponent<BasicMovement>();
     }
 
     private void Update() {
