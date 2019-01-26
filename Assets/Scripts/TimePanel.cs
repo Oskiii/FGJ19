@@ -8,6 +8,8 @@ public class TimePanel : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI _timeText;
+    [SerializeField]
+    private TextMeshProUGUI _waveText;
     private CanvasGroup _canvasGroup;
 
     public static TimePanel Instance;
@@ -22,9 +24,10 @@ public class TimePanel : MonoBehaviour
         _canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    public void Show(string text)
+    public void Show(string timeText, int wave)
     {
-        _timeText.text = text;
+        _timeText.text = timeText;
+        _waveText.text = $"Wave {wave}";
 
         Sequence seq = DOTween.Sequence();
         seq.Append(_canvasGroup.DOFade(1f, 0.05f));
