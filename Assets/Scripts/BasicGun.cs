@@ -36,7 +36,11 @@ public class BasicGun : MonoBehaviour, IGun
         GameObject bullet = Instantiate(_bullet.gameObject, _muzzlePoint.position, Quaternion.identity);
         var bulletRb = bullet.GetComponent<Rigidbody2D>();
 
-        bulletRb.AddForce(transform.up * _shootForce, ForceMode2D.Impulse);
+        var dir = transform.up * _shootForce;
+        var randomAngle = Quaternion.Euler(0, 0, UnityEngine.Random.Range(-3f, 3f));
+        dir = randomAngle * dir;
+        bulletRb.AddForce(dir, ForceMode2D.Impulse);
+
         Destroy(bullet, 3f);
 
         GetComponent<Gun>().DoShootEffects(transform.up * _shootForce);
