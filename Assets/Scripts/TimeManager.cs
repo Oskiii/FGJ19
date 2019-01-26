@@ -11,14 +11,12 @@ public class TimeManager
 
         var seq = DOTween.Sequence();
         seq.Append(DOTween.To(() => Time.timeScale, val => Time.timeScale = val, goalScale, duration)
-            .OnUpdate(() => Debug.Log(Time.timeScale))
             .OnComplete(() =>
             {
                 Time.timeScale = goalScale;
             }));
 
         seq.Append(DOTween.To(() => Time.timeScale, val => Time.timeScale = val, 1f, duration)
-            .OnUpdate(() => Debug.Log(Time.timeScale))
             .OnComplete(() =>
             {
                 Time.timeScale = 1f;
