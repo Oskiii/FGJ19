@@ -5,7 +5,6 @@
 		}
 	],
 	"settings": {
-		"csharpfixformat.style.spaces.beforeParenthesis": false,
 		"editor.formatOnSave": true
 	}
 }
