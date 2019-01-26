@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1838525010}
   - component: {fileID: 8230606023067419344}
   - component: {fileID: 9174149666182238024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 2004118005}
   - component: {fileID: 1958698006}
   - component: {fileID: 1325671050}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2279076212179915677}
   - component: {fileID: 7221306055145492415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127641225919161992}
   - component: {fileID: 85732109}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GunHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,6 +400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318843261708260203, guid: 43f33967bb0464327a348cc227456350,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1318843261708260202, guid: 43f33967bb0464327a348cc227456350,
         type: 3}
@@ -506,6 +511,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1318843263374426012, guid: 43f33967bb0464327a348cc227456350,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318843262146270646, guid: 43f33967bb0464327a348cc227456350,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318843263111466691, guid: 43f33967bb0464327a348cc227456350,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318843262888037821, guid: 43f33967bb0464327a348cc227456350,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f33967bb0464327a348cc227456350, type: 3}
 --- !u!224 &3629001982842656243 stripped
@@ -537,6 +562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasicGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988414286926581426, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5857018875844961035, guid: 99ff99551e96d430aaf978c1c5af0610,
         type: 3}
@@ -597,6 +627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510915457867707168, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
         type: 3}
