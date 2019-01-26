@@ -8,7 +8,6 @@ public class PowerUp : MonoBehaviour {
   private Gun _newGun;
 
   private void OnTriggerEnter2D (Collider2D other) {
-    print ("Collision!");
     bool isPlayer = other.transform.root.gameObject.tag == "Player";
     if (!isPlayer) return;
 
