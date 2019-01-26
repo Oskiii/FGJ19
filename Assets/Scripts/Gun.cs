@@ -6,7 +6,6 @@ public class Gun : MonoBehaviour
 {
     [SerializeField]
     private GameObject OnShootPrefab;
-
     public void DoShootEffects(Vector3 dir)
     {
         if (OnShootPrefab == null) return;
