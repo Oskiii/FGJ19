@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         CurrentGun = GetComponentInChildren<Gun>();
-        GetComponent<Health>().OnDie += LoseGame;
     }
 
     public void SetGun(Gun gun)
@@ -23,11 +22,6 @@ public class Player : MonoBehaviour
         GameObject newGun = Instantiate(gun.gameObject, _gunHolder);
         newGun.transform.position = _gunHolder.transform.position;
         CurrentGun = newGun.GetComponent<Gun>();
-    }
-
-    private void LoseGame()
-    {
-        BackToMenu();
     }
 
     private IEnumerator BackToMenu()
