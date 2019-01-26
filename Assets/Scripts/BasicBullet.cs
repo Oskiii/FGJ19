@@ -15,6 +15,8 @@ public class BasicBullet : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
 
         Destroy(gameObject, _lifeTime);
+
+        GetComponent<Cinemachine.CinemachineImpulseSource>().GenerateImpulse();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
