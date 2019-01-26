@@ -26,4 +26,10 @@ public class Health : MonoBehaviour
             OnDie?.Invoke();
         }
     }
+
+    public void Heal(int amount)
+    {
+        Hp += amount;
+        print("Healed " + Hp);
+    }
 }

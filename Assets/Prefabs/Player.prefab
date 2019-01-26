@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c642add61c98499b81131cca859cdb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gunHolder: {fileID: 0}
+  _gunHolder: {fileID: 127641225919161992}
   CurrentGun: {fileID: 1505258965713723288}
 --- !u!95 &1958698007
 Animator:
