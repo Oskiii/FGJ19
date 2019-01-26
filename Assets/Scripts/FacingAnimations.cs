@@ -21,7 +21,7 @@ public class FacingAnimations : MonoBehaviour
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
         Vector3 vecToMouse = worldPos - transform.position;
 
-        _animator.SetFloat("VelX", vecToMouse.x);
-        _animator.SetFloat("VelY", vecToMouse.y);
+        _animator.SetFloat("FacingX", vecToMouse.x);
+        _animator.SetFloat("FacingY", vecToMouse.y);
     }
 }
