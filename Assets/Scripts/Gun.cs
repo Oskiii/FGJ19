@@ -9,7 +9,9 @@ public class Gun : MonoBehaviour
 
     public void DoShootEffects(Vector3 dir)
     {
-        GameObject obj = Instantiate(OnShootPrefab, transform.position, Quaternion.identity);
+        if (OnShootPrefab == null) return;
+
+        GameObject obj = Instantiate(OnShootPrefab, transform.GetChild(0).position, Quaternion.identity);
         obj.transform.right = dir;
     }
 }

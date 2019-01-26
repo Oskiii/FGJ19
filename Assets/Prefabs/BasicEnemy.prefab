@@ -447,6 +447,11 @@ PrefabInstance:
       propertyPath: _shootCooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3853762986685832490, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: OnShootPrefab
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ff99551e96d430aaf978c1c5af0610, type: 3}
 --- !u!4 &8467128162036265774 stripped
