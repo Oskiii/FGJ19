@@ -1,4 +1,3 @@
-internal interface IGun
-{
-    void SetShouldShoot(bool shouldShoot);
+public interface IGun {
+  void SetShouldShoot (bool shouldShoot);
 }
