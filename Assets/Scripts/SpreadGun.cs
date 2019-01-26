@@ -10,12 +10,19 @@ public class SpreadGun : MonoBehaviour, IGun {
   [SerializeField]
   private float _shootForce = 1f;
   [SerializeField]
+  private float _playerVelocityMultiplier = 0.001f;
+  [SerializeField]
   private int _bulletAmount = 3;
   [SerializeField]
   private float _shootCooldown = 0.1f;
   private float _lastShotTime = 0f;
   private float _angleBetweenBullets;
   private bool _shouldShoot = false;
+  private Rigidbody2D _shooterRb;
+
+  private void Start () {
+    _shooterRb = GetComponentInParent<Rigidbody2D> ();
+  }
 
   public void SetShouldShoot (bool shouldShoot) {
     _shouldShoot = shouldShoot;
@@ -36,7 +43,7 @@ public class SpreadGun : MonoBehaviour, IGun {
       var bulletRb = bullet.GetComponent<Rigidbody2D> ();
       Vector2 bulletDir = Rotate (transform.up, _angleBetweenBullets * i - _angleBetweenBullets);
 
-      bulletRb.AddForce (bulletDir * _shootForce, ForceMode2D.Impulse);
+      bulletRb.AddForce (bulletDir * _shootForce + _shooterRb.velocity * _playerVelocityMultiplier, ForceMode2D.Impulse);
       Destroy (bullet, 3f);
     }
   }
