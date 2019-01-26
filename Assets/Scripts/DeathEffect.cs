@@ -18,5 +18,7 @@ public class DeathEffect : MonoBehaviour
     private void DoEffect()
     {
         Instantiate(_effectPrefab, transform.position, Quaternion.identity);
+
+        GetComponent<Cinemachine.CinemachineImpulseSource>()?.GenerateImpulse();
     }
 }
