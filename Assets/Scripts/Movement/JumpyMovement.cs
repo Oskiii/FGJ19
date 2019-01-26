@@ -11,7 +11,9 @@ public class JumpyMovement : MonoBehaviour, IMover {
   [SerializeField]
   private float _moveSpeed = 10f;
   [SerializeField]
-  private float _jumpTimer = 2f;
+  private float _jumpWait = 2f;
+  [SerializeField]
+  private float _jumpTime = 1f;
 
   private void Start () {
     _rb = GetComponent<Rigidbody2D> ();
@@ -19,12 +21,12 @@ public class JumpyMovement : MonoBehaviour, IMover {
   }
 
   private void Update () {
-    if (_timeSinceLastJump >= _jumpTimer) {
+    if (_timeSinceLastJump >= _jumpWait) {
       _jumping = true;
       _timeSinceLastJump = 0.0f;
     }
 
-    if (_timeSinceLastJump < _jumpTimer && _timeSinceLastJump > 1f && _jumping) {
+    if (_timeSinceLastJump < _jumpWait && _timeSinceLastJump > _jumpTime && _jumping) {
       _jumping = false;
       _rb.velocity = Vector2.zero;
     }
