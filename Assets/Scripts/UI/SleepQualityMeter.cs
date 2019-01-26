@@ -12,6 +12,7 @@ public class SleepQualityMeter : MonoBehaviour
 
     private void Start()
     {
+        _slider = GetComponent<Slider>();
         _slider.maxValue = _maxQuality;
     }
 
