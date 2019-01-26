@@ -35,6 +35,10 @@ public class NightMeter : MonoBehaviour
         DOTween.To(() => _currentHourMeter.Progress, val => _currentHourMeter.Progress = val, 1f, 1f)
             .SetDelay(1f)
             .SetEase(Ease.InOutCubic)
+            .OnStart(() =>
+            {
+                TimePanel.Instance.Show($"{_currentHourIndex}:00 AM");
+            })
             .OnComplete(() =>
             {
                 _currentHourIndex += 1;
