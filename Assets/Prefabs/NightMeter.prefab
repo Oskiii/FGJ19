@@ -46,13 +46,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1127084357}
   - component: {fileID: 1127084358}
+  - component: {fileID: 4676509424762489186}
   m_Layer: 5
   m_Name: SleepQualityMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127084357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -123,6 +124,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &4676509424762489186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127084356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01549c18726904f84a2cb510bc50f2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxQuality: 10
 --- !u!1 &1644500337
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +244,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -571,6 +585,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae96eb86a1874bb398886c1c9c20244, type: 3}
+--- !u!224 &469409502915348421 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1384981090507814982, guid: eae96eb86a1874bb398886c1c9c20244,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566088847789375363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1597584937689488 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1566814501143715347, guid: eae96eb86a1874bb398886c1c9c20244,
@@ -583,12 +603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f6c231b2eed45e7a62100de5888bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &469409502915348421 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1384981090507814982, guid: eae96eb86a1874bb398886c1c9c20244,
-    type: 3}
-  m_PrefabInstance: {fileID: 1566088847789375363}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1737584634514350772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,6 +1634,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae96eb86a1874bb398886c1c9c20244, type: 3}
+--- !u!224 &7237284445766269199 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1384981090507814982, guid: eae96eb86a1874bb398886c1c9c20244,
+    type: 3}
+  m_PrefabInstance: {fileID: 8599499437192134985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7127507512786968410 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1566814501143715347, guid: eae96eb86a1874bb398886c1c9c20244,
@@ -1632,9 +1652,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f6c231b2eed45e7a62100de5888bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &7237284445766269199 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1384981090507814982, guid: eae96eb86a1874bb398886c1c9c20244,
-    type: 3}
-  m_PrefabInstance: {fileID: 8599499437192134985}
-  m_PrefabAsset: {fileID: 0}
