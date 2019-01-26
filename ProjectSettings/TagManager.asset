@@ -16,8 +16,8 @@ TagManager:
   - PostProcessing
   - PlayerBullets
   - Player
-  - 
-  - 
+  - EnemyBullets
+  - Enemy
   - 
   - 
   - 
