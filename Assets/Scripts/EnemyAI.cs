@@ -13,6 +13,6 @@ public class EnemyAI : MonoBehaviour {
   void Update () {
     _targetPos = GameObject.FindGameObjectWithTag ("Player").transform.position;
     var moveDir = new Vector2 (_targetPos.x - transform.position.x, _targetPos.y - transform.position.y).normalized;
-    _movement.Move (moveDir);
+    _movement.SetDirection (moveDir);
   }
 }
