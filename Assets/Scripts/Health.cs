@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     private HealthBar _healthBar;
 
     public int Hp { get; private set; }
+    private bool _dead = false;
 
     public event Action OnDie;
 
@@ -25,8 +26,9 @@ public class Health : MonoBehaviour
         Hp -= dmg;
         UpdateHealthbar();
 
-        if (Hp < 0)
+        if (!_dead && Hp < 0)
         {
+            _dead = true;
             OnDie?.Invoke();
         }
     }

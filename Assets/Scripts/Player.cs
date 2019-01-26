@@ -27,6 +27,12 @@ public class Player : MonoBehaviour
 
     private void LoseGame()
     {
+        BackToMenu();
+    }
+
+    private IEnumerator BackToMenu()
+    {
+        yield return new WaitForSeconds(5f);
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }
