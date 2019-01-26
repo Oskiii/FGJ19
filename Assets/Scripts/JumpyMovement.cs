@@ -20,29 +20,30 @@ public class JumpyMovement : MonoBehaviour, IMover
 
     private void Update()
     {
-        if(_timeSinceLastJump >= 2.0f)
+        if (_timeSinceLastJump >= 2.0f)
         {
-          _jumping = true;
-          _timeSinceLastJump = 0.0f;
+            _jumping = true;
+            _timeSinceLastJump = 0.0f;
         }
 
-        if(_timeSinceLastJump < 2.0f && _timeSinceLastJump > 1.0f)
+        if (_timeSinceLastJump < 2.0f && _timeSinceLastJump > 1.0f)
         {
-          _jumping = false;
+            _jumping = false;
         }
 
-        if(_jumping) {
-          Jump(_dir);
+        if (_jumping)
+        {
+            Jump(_dir);
         }
 
         _timeSinceLastJump += Time.deltaTime;
     }
 
-    public void Move(Vector2 dir)
+    public void SetDirection(Vector2 dir)
     {
-        if(!_jumping)
+        if (!_jumping)
         {
-          _dir = dir;
+            _dir = dir;
         }
     }
 

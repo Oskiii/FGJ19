@@ -13,11 +13,23 @@ public class BasicGun : MonoBehaviour, IGun
     [SerializeField]
     private float _shootCooldown = 0.1f;
     private float _lastShotTime = 0f;
+    private bool _shouldShoot = false;
+
+    public void SetShouldShoot(bool shouldShoot)
+    {
+        _shouldShoot = shouldShoot;
+    }
+
+    private void Update()
+    {
+        if (_shouldShoot && Time.time >= _lastShotTime + _shootCooldown)
+        {
+            Shoot();
+        }
+    }
 
     public void Shoot()
     {
-        if (Time.time < _lastShotTime + _shootCooldown) return;
-
         _lastShotTime = Time.time;
 
         GameObject bullet = Instantiate(_bullet.gameObject, _muzzlePoint.position, Quaternion.identity);

@@ -18,12 +18,9 @@ public class PlayerInput : MonoBehaviour
         var x = Input.GetAxisRaw("Horizontal");
         var y = Input.GetAxisRaw("Vertical");
         var moveDir = new Vector2(x, y).normalized;
-        _movement.Move(moveDir);
+        _movement.SetDirection(moveDir);
 
         var shouldShoot = Input.GetMouseButton(0);
-        if (shouldShoot)
-        {
-            _gun.Shoot();
-        }
+        _gun.SetShouldShoot(shouldShoot);
     }
 }

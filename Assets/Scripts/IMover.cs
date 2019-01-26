@@ -2,5 +2,5 @@ using UnityEngine;
 
 internal interface IMover
 {
-    void Move(Vector2 direction);
+    void SetDirection(Vector2 direction);
 }

@@ -14,7 +14,7 @@ public class BasicMovement : MonoBehaviour, IMover
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Move(Vector2 dir)
+    public void SetDirection(Vector2 dir)
     {
         _rb.velocity = (dir * _moveSpeed);
     }
