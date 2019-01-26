@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     public int Hp { get; private set; }
     private bool _dead = false;
 
+    public event Action OnDamage;
+
     public event Action OnDie;
 
     private void Start()
@@ -24,6 +26,8 @@ public class Health : MonoBehaviour
     public void Damage(int dmg)
     {
         Hp -= dmg;
+
+        OnDamage?.Invoke();
 
         if (Hp < 0)
         {
