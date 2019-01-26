@@ -22,6 +22,9 @@ public class NightMeter : MonoBehaviour
         _enemySpawner.WaveComplete += ChangeHour;
         _enemySpawner.SpawnNextWave();
 
+        FindObjectOfType<Player>().GetComponent<Health>().OnDie +=
+            () => WinPanel.Instance.Show(_currentHourIndex * 60f + _currentHourTime);
+
         _currentHourMeter = _hourMeters[0];
 
         foreach (var meter in _hourMeters)
@@ -44,7 +47,10 @@ public class NightMeter : MonoBehaviour
             })
             .OnComplete(() =>
             {
-                if (_currentHourIndex >= _hourMeters.Count) return;
+                if (_currentHourIndex >= _hourMeters.Count)
+                {
+                    WinPanel.Instance.Show(_currentHourIndex * 60f + _currentHourTime);
+                }
 
                 _currentHourMeter = _hourMeters[_currentHourIndex];
                 _enemySpawner.SpawnNextWave();

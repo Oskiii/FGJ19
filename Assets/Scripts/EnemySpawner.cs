@@ -49,12 +49,4 @@ public class EnemySpawner : MonoBehaviour
             WaveComplete?.Invoke();
         }
     }
-
-    private void CheckWin()
-    {
-        if (_spawnedEnemies.Count == 0)
-        {
-            print("WINNER WINNER");
-        }
-    }
 }
