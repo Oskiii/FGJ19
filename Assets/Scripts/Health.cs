@@ -24,9 +24,15 @@ public class Health : MonoBehaviour
     public void Damage(int dmg)
     {
         Hp -= dmg;
+
+        if (Hp < 0)
+        {
+            Hp = 0;
+        }
+
         UpdateHealthbar();
 
-        if (!_dead && Hp < 0)
+        if (!_dead && Hp <= 0)
         {
             _dead = true;
             OnDie?.Invoke();
