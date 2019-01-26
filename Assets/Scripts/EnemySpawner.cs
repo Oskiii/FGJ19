@@ -32,7 +32,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void HandleEnemyDeath(GameObject enemy)
     {
-        print("DIED");
         _spawnedEnemies.Remove(enemy);
         Destroy(enemy);
 
