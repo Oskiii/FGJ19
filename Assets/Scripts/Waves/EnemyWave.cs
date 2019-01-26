@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ public class EnemyWave : ScriptableObject
         public int Amount;
     }
 
-    public IEnumerator Spawn(Transform spawnPoint)
+    public IEnumerator Spawn(Transform spawnPoint, Action<GameObject> onSpawn)
     {
         yield return new WaitForSeconds(DelayBefore);
 
@@ -28,6 +29,7 @@ public class EnemyWave : ScriptableObject
             for (int i = 0; i < e.Amount; i++)
             {
                 var enemy = Instantiate(e.Enemy, spawnPoint.position, Quaternion.identity);
+                onSpawn(enemy);
             }
         }
 
