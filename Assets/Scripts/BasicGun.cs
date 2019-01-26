@@ -40,5 +40,6 @@ public class BasicGun : MonoBehaviour, IGun
         Destroy(bullet, 3f);
 
         GetComponent<Gun>().DoShootEffects(transform.up * _shootForce);
+        TimeManager.Slowdown();
     }
 }
