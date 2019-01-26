@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1666187609611338061}
   - component: {fileID: 8993619397208109646}
   - component: {fileID: 2253392260065175829}
+  - component: {fileID: 5255350827684023995}
   m_Layer: 12
   m_Name: BigEnemy
   m_TagString: Untagged
@@ -114,6 +115,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &5255350827684023995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666187609611338063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb483c65cec2344219eca0fc0b766e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectPrefab: {fileID: 1235163375290826505, guid: 562ce19b6306ff44ca7cb4d470d054cf,
+    type: 3}
 --- !u!1 &1666187610779585325
 GameObject:
   m_ObjectHideFlags: 0

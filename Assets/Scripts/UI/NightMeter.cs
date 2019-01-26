@@ -28,22 +28,25 @@ public class NightMeter : MonoBehaviour
         {
             meter.Progress = 0f;
         }
+
+        TimePanel.Instance.Show("12:00 PM", _currentHourIndex + 1);
     }
 
     private void ChangeHour()
     {
+        _currentHourIndex += 1;
         DOTween.To(() => _currentHourMeter.Progress, val => _currentHourMeter.Progress = val, 1f, 1f)
             .SetDelay(1f)
             .SetEase(Ease.InOutCubic)
             .OnStart(() =>
             {
-                TimePanel.Instance.Show($"{_currentHourIndex}:00 AM");
+                TimePanel.Instance.Show($"{_currentHourIndex}:00 AM", _currentHourIndex + 1);
             })
             .OnComplete(() =>
             {
-                _currentHourIndex += 1;
-                _currentHourMeter = _hourMeters[_currentHourIndex];
+                if (_currentHourIndex >= _hourMeters.Count) return;
 
+                _currentHourMeter = _hourMeters[_currentHourIndex];
                 _enemySpawner.SpawnNextWave();
             });
     }

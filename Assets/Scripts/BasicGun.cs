@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,5 +38,7 @@ public class BasicGun : MonoBehaviour, IGun
 
         bulletRb.AddForce(transform.up * _shootForce, ForceMode2D.Impulse);
         Destroy(bullet, 3f);
+
+        GetComponent<Gun>().DoShootEffects(transform.up * _shootForce);
     }
 }
