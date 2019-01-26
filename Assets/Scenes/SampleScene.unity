@@ -368,10 +368,10 @@ MonoBehaviour:
   _waves:
   - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
   - {fileID: 11400000, guid: d24419e93906941d8bc9cf58e3e51518, type: 2}
-  - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
-  - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
-  - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
-  - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
+  - {fileID: 11400000, guid: 9186c5f5a3a04407bb15bec359976dff, type: 2}
+  - {fileID: 11400000, guid: b915b72c68f53474cabb4003aca63264, type: 2}
+  - {fileID: 11400000, guid: ea0471a89af484180bde7b031752ca97, type: 2}
+  - {fileID: 11400000, guid: ff9695ef6e63a4665a6f3452c2e5c26d, type: 2}
   - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
   - {fileID: 11400000, guid: 14a5cb4d41eb94e9b8674afc63836558, type: 2}
 --- !u!4 &595495467
