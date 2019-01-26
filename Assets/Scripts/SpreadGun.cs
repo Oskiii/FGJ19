@@ -22,11 +22,11 @@ public class SpreadGun : MonoBehaviour, IGun {
 
   private void Start () {
     _shooterRb = GetComponentInParent<Rigidbody2D> ();
+    _angleBetweenBullets = 60 / _bulletAmount;
   }
 
   public void SetShouldShoot (bool shouldShoot) {
     _shouldShoot = shouldShoot;
-    _angleBetweenBullets = 60 / _bulletAmount;
   }
 
   private void Update () {
