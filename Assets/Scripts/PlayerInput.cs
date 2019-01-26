@@ -17,7 +17,8 @@ public class PlayerInput : MonoBehaviour {
     var moveDir = new Vector2 (x, y).normalized;
     _movement.SetDirection (moveDir);
 
-    var shouldShoot = Input.GetMouseButton (0);
+    //var shouldShoot = Input.GetMouseButton (0);
+		var shouldShoot = Input.GetButton("Fire1");
     _player.CurrentGun.GetComponent<IGun> ().SetShouldShoot (shouldShoot);
   }
 }
