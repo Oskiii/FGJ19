@@ -17,7 +17,10 @@ public class EnemyAI : MonoBehaviour {
     var moveDir = new Vector2 (_targetPos.x - transform.position.x, _targetPos.y - transform.position.y).normalized;
     _movement.SetDirection (moveDir);
 
-    var shouldShoot = true;
-    _gun.SetShouldShoot(shouldShoot);
+    if(_gun != null)
+    {
+      var shouldShoot = true;
+      _gun.SetShouldShoot(shouldShoot);
+    }
   }
 }
