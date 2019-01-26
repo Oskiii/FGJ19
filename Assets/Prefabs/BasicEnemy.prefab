@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 2650658176713308266}
   - component: {fileID: 2650658176713308277}
   - component: {fileID: 2650658176713308276}
-  - component: {fileID: 6256578533243530124}
+  - component: {fileID: 359564049}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -161,7 +161,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6256578533243530124
+--- !u!114 &359564049
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,10 +170,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2650658176713308279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c94413e9e0cd43f0941aec7d7d0faef, type: 3}
+  m_Script: {fileID: 11500000, guid: d76fdb740deab4116b6782c13ffe6da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _sprite: {fileID: 2650658175679541770}
+  _predictionMultiplier: 0.15
 --- !u!1001 &2650658175516119077
 PrefabInstance:
   m_ObjectHideFlags: 0
