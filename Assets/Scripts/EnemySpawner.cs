@@ -12,22 +12,26 @@ public class EnemySpawner : MonoBehaviour
 
     private List<GameObject> _spawnedEnemies = new List<GameObject>();
 
-    private void Start()
+    private int _currentWaveIndex = 0;
+
+    public event System.Action WaveComplete;
+
+    public void SpawnNextWave()
     {
-        StartCoroutine(Spawn());
+        StartCoroutine(SpawnWave(_currentWaveIndex));
+        _currentWaveIndex += 1;
     }
 
-    private IEnumerator Spawn()
+    private IEnumerator SpawnWave(int waveIndex)
     {
-        foreach (var wave in _waves)
+        var wave = _waves[waveIndex];
+
+        var spawnPos = _spawnPoints[Random.Range(0, _spawnPoints.Count)];
+        yield return wave.Spawn(spawnPos, enemy =>
         {
-            var spawnPos = _spawnPoints[Random.Range(0, _spawnPoints.Count)];
-            yield return wave.Spawn(spawnPos, enemy =>
-            {
-                _spawnedEnemies.Add(enemy);
-                enemy.GetComponent<Health>().OnDie += () => HandleEnemyDeath(enemy);
-            });
-        }
+            _spawnedEnemies.Add(enemy);
+            enemy.GetComponent<Health>().OnDie += () => HandleEnemyDeath(enemy);
+        });
     }
 
     private void HandleEnemyDeath(GameObject enemy)
@@ -35,7 +39,15 @@ public class EnemySpawner : MonoBehaviour
         _spawnedEnemies.Remove(enemy);
         Destroy(enemy);
 
-        CheckWin();
+        CheckWaveDone();
+    }
+
+    private void CheckWaveDone()
+    {
+        if (_spawnedEnemies.Count == 0)
+        {
+            WaveComplete?.Invoke();
+        }
     }
 
     private void CheckWin()

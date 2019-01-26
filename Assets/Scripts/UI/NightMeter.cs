@@ -10,16 +10,18 @@ public class NightMeter : MonoBehaviour
     private List<HourMeter> _hourMeters;
 
     private HourMeter _currentHourMeter;
+    private EnemySpawner _enemySpawner;
 
-    private float _timePassed = 0f;
-    private float _hourLength;
     private float _currentHourTime = 0f;
-    private bool _nightInProgress = true;
+    private int _currentHourIndex = 0;
 
     private void Start()
     {
+        _enemySpawner = FindObjectOfType<EnemySpawner>();
+        _enemySpawner.WaveComplete += ChangeHour;
+        _enemySpawner.SpawnNextWave();
+
         _currentHourMeter = _hourMeters[0];
-        _hourLength = _nightLength / _hourMeters.Count;
 
         foreach (var meter in _hourMeters)
         {
@@ -27,33 +29,13 @@ public class NightMeter : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (!_nightInProgress) return;
-
-        _timePassed += Time.deltaTime;
-        _currentHourTime += Time.deltaTime;
-
-        if (_currentHourTime > _hourLength)
-        {
-            ChangeHour();
-            return;
-        }
-
-        _currentHourMeter.SetProgress(_currentHourTime / _hourLength);
-    }
-
     private void ChangeHour()
     {
-        _currentHourTime = 0f;
-        int currentHourMeterIndex = Mathf.FloorToInt((_timePassed / _nightLength) * _hourMeters.Count);
+        _currentHourMeter.SetProgress(1f);
 
-        if (currentHourMeterIndex >= _hourMeters.Count)
-        {
-            _nightInProgress = false;
-            return;
-        }
+        _currentHourIndex += 1;
+        _currentHourMeter = _hourMeters[_currentHourIndex];
 
-        _currentHourMeter = _hourMeters[currentHourMeterIndex];
+        _enemySpawner.SpawnNextWave();
     }
 }
