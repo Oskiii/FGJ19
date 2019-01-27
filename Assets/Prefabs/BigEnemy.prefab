@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8993619397208109646}
   - component: {fileID: 5255350827684023995}
   - component: {fileID: 731508837075022856}
+  - component: {fileID: 80196660458419080}
   m_Layer: 12
   m_Name: BigEnemy
   m_TagString: Untagged
@@ -148,6 +149,20 @@ PolygonCollider2D:
       - {x: 0.53212, y: -1.7840939}
       - {x: 3.789991, y: -0.35960674}
       - {x: 2.23136, y: 1.2840939}
+--- !u!114 &80196660458419080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666187609611338063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69e67833f3254f5b85ba939a20b9793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collideDamage: 5
+  _collideForce: 6
 --- !u!1 &1666187610779585325
 GameObject:
   m_ObjectHideFlags: 0
