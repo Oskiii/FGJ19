@@ -94,8 +94,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -799,6 +799,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999359
       objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 06:00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
 --- !u!224 &7331240311662895 stripped
@@ -938,6 +943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999359
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 07:00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
@@ -1079,6 +1089,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999359
       objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 05:00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
 --- !u!224 &7331240657630548 stripped
@@ -1218,6 +1233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999359
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 04:00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
@@ -1484,6 +1504,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999359
       objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 02:00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
 --- !u!224 &7331239599689500 stripped
@@ -1623,6 +1648,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999359
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071076002995615, guid: b59a1d101a8b94862ab1248bcd6a7bc4,
+        type: 3}
+      propertyPath: m_text
+      value: 03:00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b59a1d101a8b94862ab1248bcd6a7bc4, type: 3}
