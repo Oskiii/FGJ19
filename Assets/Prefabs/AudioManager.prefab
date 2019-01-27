@@ -159,3 +159,13 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: player hit
+    clip: {fileID: 8300000, guid: 9da79889c7cfb664c914611f083441b6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: shotgun
+    clip: {fileID: 8300000, guid: edf5e7b14261b7f48ae9cbb8f7f8a46a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
