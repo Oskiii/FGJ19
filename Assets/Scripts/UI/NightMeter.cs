@@ -33,23 +33,6 @@ public class NightMeter : MonoBehaviour
         TimePanel.Instance.Show("12:00 PM", _currentHourIndex + 1);
 
         _timeSlider.value = 0f;
-
-        InitHours();
-    }
-
-    private void InitHours()
-    {
-        var posY = _timeSlider.transform.position.y;
-        float cumX = _timeSlider.transform.position.x;
-        float spaceBetween = _timeSliderBg.rect.width / _hourCount;
-        for (int i = 0; i < _hourCount; i++)
-        {
-            var marker = Instantiate(_hourMarkerPrefab, _timeSlider.transform);
-            var posX = cumX + spaceBetween;
-            var pos = new Vector2(posX, posY);
-            marker.transform.position = pos;
-            cumX = posX;
-        }
     }
 
     private void ChangeHour()
