@@ -33,8 +33,8 @@ public class TimePanel : MonoBehaviour
         _dayText.text = DifficultyManager.Instance.DayString + " night";
 
         Sequence seq = DOTween.Sequence();
-        seq.Append(_canvasGroup.DOFade(1f, 0.05f));
+        seq.Append(_canvasGroup.DOFade(1f, 1.05f));
         seq.AppendInterval(3f);
-        seq.Append(_canvasGroup.DOFade(0f, 0.5f));
+        seq.Append(_canvasGroup.DOFade(0f, 1.5f));
     }
 }
