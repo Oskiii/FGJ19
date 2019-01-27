@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 7.3
+  bigEnemy: 0
+  gruntSFX: 
 --- !u!114 &1785847824048293764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _shootForce
       value: 0.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: shootSFX
+      value: shoot02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ff99551e96d430aaf978c1c5af0610, type: 3}
