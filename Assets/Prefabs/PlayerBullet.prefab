@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
+  hitSFX: hit01
 --- !u!114 &8129329447185768654
 MonoBehaviour:
   m_ObjectHideFlags: 0

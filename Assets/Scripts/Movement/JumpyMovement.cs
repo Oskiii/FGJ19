@@ -24,7 +24,9 @@ public class JumpyMovement : MonoBehaviour, IMover {
     if (_timeSinceLastJump >= _jumpWait) {
       _jumping = true;
       _timeSinceLastJump = 0.0f;
-    }
+            FindObjectOfType<AudioManager>().Play("attack01");
+            FindObjectOfType<AudioManager>().ChangePitch("attack01", Random.Range(0.85f, 1.15f));
+        }
 
     if (_timeSinceLastJump < _jumpWait && _timeSinceLastJump > _jumpTime && _jumping) {
       _jumping = false;
@@ -46,5 +48,7 @@ public class JumpyMovement : MonoBehaviour, IMover {
 
   private void Jump (Vector2 dir) {
     _rb.velocity = (dir * _moveSpeed);
-  }
+       
+
+    }
 }

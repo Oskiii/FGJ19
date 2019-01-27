@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectPrefab: {fileID: 1235163375290826505, guid: 562ce19b6306ff44ca7cb4d470d054cf,
     type: 3}
+  deathSFX: death01
 --- !u!114 &8428424833212307005
 MonoBehaviour:
   m_ObjectHideFlags: 0
