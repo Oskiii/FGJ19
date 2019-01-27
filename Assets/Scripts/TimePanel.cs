@@ -10,6 +10,8 @@ public class TimePanel : MonoBehaviour
     private TextMeshProUGUI _timeText;
     [SerializeField]
     private TextMeshProUGUI _waveText;
+    [SerializeField]
+    private TextMeshProUGUI _dayText;
     private CanvasGroup _canvasGroup;
 
     public static TimePanel Instance;
@@ -28,6 +30,7 @@ public class TimePanel : MonoBehaviour
     {
         _timeText.text = timeText;
         _waveText.text = $"Wave {wave}";
+        _dayText.text = DifficultyManager.Instance.DayString + " night";
 
         Sequence seq = DOTween.Sequence();
         seq.Append(_canvasGroup.DOFade(1f, 0.05f));

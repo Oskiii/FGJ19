@@ -20,6 +20,8 @@ public class WinPanel : MonoBehaviour
     private List<Image> _stars;
     [SerializeField]
     private TextMeshProUGUI _sleepTimeText;
+    [SerializeField]
+    private TextMeshProUGUI _dayText;
 
     public static WinPanel Instance;
 
@@ -40,6 +42,10 @@ public class WinPanel : MonoBehaviour
     {
         _panel.SetActive(true);
         _bg.SetActive(true);
+
+        _dayText.text = DifficultyManager.Instance.DayString + " night";
+
+        DifficultyManager.Instance.Increase();
 
         float fullSleepMinutes = 8 * 60f;
         float percentage = sleepMinutes / fullSleepMinutes;

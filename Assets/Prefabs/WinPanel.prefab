@@ -344,6 +344,7 @@ MonoBehaviour:
   - {fileID: 4957538291287498220}
   - {fileID: 4957538291888705179}
   _sleepTimeText: {fileID: 3100377594018040798}
+  _dayText: {fileID: 7256666842460322232}
 --- !u!1 &2180863359656547649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1098,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 258
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
