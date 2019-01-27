@@ -42,6 +42,8 @@ public class SpreadGun : MonoBehaviour, IGun {
   public void Shoot () {
     _lastShotTime = Time.time;
 
+	AudioManager.Instance.Play(shootSFX);
+
     for (int i = 0; i < _bulletAmount; i++) {
       GameObject bullet = Instantiate (_bullet.gameObject, _muzzlePoint.position, Quaternion.identity);
       var bulletRb = bullet.GetComponent<Rigidbody2D> ();
