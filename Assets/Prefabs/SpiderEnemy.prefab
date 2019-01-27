@@ -219,6 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectPrefab: {fileID: 1235163375290826505, guid: 562ce19b6306ff44ca7cb4d470d054cf,
     type: 3}
+  deathSFX: 
 --- !u!114 &5537540082036510350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,7 +918,7 @@ PrefabInstance:
     - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
         type: 3}
       propertyPath: _shootForce
-      value: 0.04
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
         type: 3}
