@@ -14,6 +14,6 @@ public class ShootEffects : MonoBehaviour
 
     private void DoEffect()
     {
-        _animator.SetTrigger("shoot");
+        _animator.SetTrigger("attack");
     }
 }
