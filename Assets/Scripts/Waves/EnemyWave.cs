@@ -11,6 +11,8 @@ public class EnemyWave : ScriptableObject {
   private List<EnemySpawnAmounts> EnemyAmounts;
   [SerializeField]
   private float DelayAfter;
+  [SerializeField]
+  private float DelayBetweenSpawns = 1f;
 
   [System.Serializable]
   private class EnemySpawnAmounts {
@@ -31,11 +33,12 @@ public class EnemyWave : ScriptableObject {
           randomVec = new Vector3 (UnityEngine.Random.Range (-2, 2), UnityEngine.Random.Range (-2, 2), 0);
         } else {
           spawnPos = spiderSpawnPoints[UnityEngine.Random.Range (0, spiderSpawnPoints.Count)];
-          randomVec = new Vector3 (UnityEngine.Random.Range (-2, 2), 0, 0);
+          randomVec = new Vector3 (UnityEngine.Random.Range (-3, 3), 0, 0);
         }
 
         var enemy = Instantiate (e.Enemy, spawnPos.position + randomVec, Quaternion.identity);
         onSpawn (enemy);
+        yield return new WaitForSeconds (DelayBetweenSpawns + UnityEngine.Random.Range (-.5f, .5f));
       }
     }
 
