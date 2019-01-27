@@ -15,10 +15,10 @@ MonoBehaviour:
   DelayBefore: 3
   EnemyAmounts:
   - Enemy: {fileID: 2381206541526983327, guid: 28a5fe6f487c8465d957eb8c4919bb32, type: 3}
-    Amount: 3
+    Amount: 1
   - Enemy: {fileID: 1834977381894936530, guid: 6e3234f4b6a32470f8290d2d8bb39445, type: 3}
-    Amount: 2
-  - Enemy: {fileID: 1666187609611338063, guid: f1bdad85c0ae84852add46d9a4ea7217, type: 3}
-    Amount: 2
+    Amount: 1
+  - Enemy: {fileID: 2650658176713308279, guid: f2c017969bef740c2b6168b7705b4f75, type: 3}
+    Amount: 1
   DelayAfter: 1
   DelayBetweenSpawns: 0.5

@@ -15,6 +15,6 @@ MonoBehaviour:
   DelayBefore: 3
   EnemyAmounts:
   - Enemy: {fileID: 2650658176713308279, guid: f2c017969bef740c2b6168b7705b4f75, type: 3}
-    Amount: 3
+    Amount: 1
   DelayAfter: 1
   DelayBetweenSpawns: 1
