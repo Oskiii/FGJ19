@@ -8,10 +8,12 @@ public class HurtOverlay : MonoBehaviour
 {
     [SerializeField]
     private Image _overlay;
+    private Tweener tween;
 
     public void Hurt()
     {
-        _overlay.DOFade(0.5f, 0.03f).OnComplete(() =>
+        tween.Kill(true);
+        tween = _overlay.DOFade(0.5f, 0.03f).OnComplete(() =>
         {
             _overlay.DOFade(0f, 0.4f);
         });

@@ -779,6 +779,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 721867407}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1161477593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6118618050154461052, guid: 4b8d5b51783b541beb7abc62327964dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1785847823124262524}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662ae90d5b09741629842835b1a55361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348902437
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +966,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf7982ecb79dc4bc8a0ad2d9394eee8e, type: 3}
+--- !u!1 &1437806074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1785847823886730285, guid: 4b8d5b51783b541beb7abc62327964dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1785847823124262524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1437806080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437806074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e5cc637028e4e98b440f73773d41a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1161477593}
+        m_MethodName: Hurt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1517204061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1615,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7311455185971723979, guid: 4b8d5b51783b541beb7abc62327964dc,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5295470745195659533, guid: 4b8d5b51783b541beb7abc62327964dc,
         type: 3}
       propertyPath: m_Name
@@ -1644,7 +1695,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3505104530352411148, guid: 4b8d5b51783b541beb7abc62327964dc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b8d5b51783b541beb7abc62327964dc, type: 3}
 --- !u!1001 &1958669649763418339
 PrefabInstance:

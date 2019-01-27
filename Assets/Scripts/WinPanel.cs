@@ -50,6 +50,8 @@ public class WinPanel : MonoBehaviour
 
         AudioManager.Instance.Play(_winSound);
 
+        FindObjectOfType<MusicScript2>().GetComponent<AudioSource>().DOFade(0.3f, 1f);
+
         _dayText.text = DifficultyManager.Instance.DayString + " night";
 
         DifficultyManager.Instance.Increase();
