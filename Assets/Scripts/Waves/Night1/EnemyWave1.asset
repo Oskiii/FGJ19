@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5732dc330bc804c0497b2cd3fe2dcf17, type: 3}
-  m_Name: EnemyWave2
+  m_Name: EnemyWave1
   m_EditorClassIdentifier: 
-  DelayBefore: 0
+  DelayBefore: 3
   EnemyAmounts:
-  - Enemy: {fileID: 1834977381894936530, guid: 6e3234f4b6a32470f8290d2d8bb39445, type: 3}
-    Amount: 1
-  DelayAfter: 0
+  - Enemy: {fileID: 2650658176713308279, guid: f2c017969bef740c2b6168b7705b4f75, type: 3}
+    Amount: 3
+  DelayAfter: 1
+  DelayBetweenSpawns: 1
