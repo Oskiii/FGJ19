@@ -129,7 +129,7 @@ MonoBehaviour:
   _shootForce: 0.1
   _playerVelocityMultiplier: 0.001
   _bulletAmount: 3
-  _shootCooldown: 0.1
+  _shootCooldown: 0.5
   shootSFX: 
 --- !u!114 &8598319609339426936
 MonoBehaviour:
