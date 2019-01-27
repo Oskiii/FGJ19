@@ -15,6 +15,10 @@ public class SpreadGun : MonoBehaviour, IGun {
   private int _bulletAmount = 3;
   [SerializeField]
   private float _shootCooldown = 0.1f;
+
+  [SerializeField] string shootSFX;
+
+  AudioManager audioManager;
   private float _lastShotTime = 0f;
   private float _angleBetweenBullets;
   private bool _shouldShoot = false;
@@ -44,6 +48,8 @@ public class SpreadGun : MonoBehaviour, IGun {
       Vector2 bulletDir = Rotate (transform.up, _angleBetweenBullets * i - _angleBetweenBullets);
 
       bulletRb.AddForce (bulletDir * _shootForce + _shooterRb.velocity * _playerVelocityMultiplier, ForceMode2D.Impulse);
+      GetComponent<Gun> ().DoShootEffects (transform.up * _shootForce);
+
       Destroy (bullet, 3f);
     }
   }
