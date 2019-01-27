@@ -17,6 +17,7 @@ public class HitEffects : MonoBehaviour
 
     private void OnDamage()
     {
+
         _animator.SetTrigger("hit");
         OnHit.Invoke();
     }
