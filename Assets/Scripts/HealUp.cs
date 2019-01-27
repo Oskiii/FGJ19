@@ -10,9 +10,9 @@ public class HealUp : MonoBehaviour {
   private float _lifeTime = 5f;
   private Rigidbody2D _rb;
 
-    [SerializeField] string pickupSFX;
+  [SerializeField] string pickupSFX;
 
-    private void Start () {
+  private void Start () {
     _rb = GetComponent<Rigidbody2D> ();
     Destroy (gameObject, _lifeTime);
     var spawnLocation = new Vector2 (Random.Range (-7, 13), Random.Range (-7, 8));
@@ -22,8 +22,8 @@ public class HealUp : MonoBehaviour {
   private void OnCollisionEnter2D (Collision2D other) {
     bool isPlayer = other.transform.root.gameObject.tag == "Player";
     if (!isPlayer) return;
-        FindObjectOfType<AudioManager>().Play(pickupSFX);
-        other.gameObject.GetComponent<Health> ().Heal (_healAmount);
+    FindObjectOfType<AudioManager> ().Play (pickupSFX);
+    other.gameObject.GetComponent<Health> ().Heal (_healAmount);
     Destroy (gameObject);
   }
 }
