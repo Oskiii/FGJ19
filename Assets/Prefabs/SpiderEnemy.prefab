@@ -572,6 +572,11 @@ PrefabInstance:
       propertyPath: _shootCooldown
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: shootSFX
+      value: shoot01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ff99551e96d430aaf978c1c5af0610, type: 3}
 --- !u!4 &1599275797812780603 stripped
