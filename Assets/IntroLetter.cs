@@ -57,7 +57,7 @@ public class IntroLetter : MonoBehaviour
 
     private void Update()
     {
-        if (_opened && Input.GetButtonDown("Submit"))
+        if (_opened && (Input.GetButtonDown("Submit") || Input.GetButtonDown("Fire1")))
         {
             StartPlay();
         }
