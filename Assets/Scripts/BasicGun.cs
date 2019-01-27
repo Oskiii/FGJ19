@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +16,12 @@ public class BasicGun : MonoBehaviour, IGun
     private float _lastShotTime = 0f;
     private bool _shouldShoot = false;
 
+    [SerializeField] string shootSFX;
+
+    AudioManager audioManager;
+
+
+
     public void SetShouldShoot(bool shouldShoot)
     {
         _shouldShoot = shouldShoot;
@@ -31,6 +37,9 @@ public class BasicGun : MonoBehaviour, IGun
 
     public void Shoot()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+        FindObjectOfType<AudioManager>().Play(shootSFX);
+        FindObjectOfType<AudioManager>().ChangePitch(shootSFX, Random.Range(0.85f, 1.15f));
         _lastShotTime = Time.time;
 
         GameObject bullet = Instantiate(_bullet.gameObject, _muzzlePoint.position, Quaternion.identity);

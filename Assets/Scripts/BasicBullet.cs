@@ -9,7 +9,7 @@ public class BasicBullet : MonoBehaviour
 
     private float _lifeTime = 3f;
     private Rigidbody2D _rb;
-
+    [SerializeField] string hitSFX;
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -21,6 +21,10 @@ public class BasicBullet : MonoBehaviour
     {
         var health = other.gameObject.GetComponent<Health>();
         if (health == null) return;
+
+
+        FindObjectOfType<AudioManager>().Play(hitSFX);
+        FindObjectOfType<AudioManager>().ChangePitch(hitSFX, Random.Range(0.85f, 1.15f));
 
         health.Damage(_damage);
         Destroy(gameObject);

@@ -85,6 +85,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2.5
+  bigEnemy: 1
+  gruntSFX: grunt02
 --- !u!114 &8993619397208109646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectPrefab: {fileID: 1235163375290826505, guid: 562ce19b6306ff44ca7cb4d470d054cf,
     type: 3}
+  deathSFX: death03
 --- !u!60 &731508837075022856
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 7.3
+  bigEnemy: 0
+  gruntSFX: 
 --- !u!114 &1785847824048293764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectPrefab: {fileID: 8499659844033869726, guid: ec4a205b9d2494b4f8fd61e706001d89,
     type: 3}
+  deathSFX: player dead
 --- !u!1 &6299484951506859439
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +505,12 @@ PrefabInstance:
     - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
         type: 3}
       propertyPath: _shootForce
-      value: 0.13
+      value: 0.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007790219234457970, guid: 99ff99551e96d430aaf978c1c5af0610,
+        type: 3}
+      propertyPath: shootSFX
+      value: shoot02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99ff99551e96d430aaf978c1c5af0610, type: 3}
@@ -640,16 +648,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318843262888037820, guid: 43f33967bb0464327a348cc227456350,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318843262888037820, guid: 43f33967bb0464327a348cc227456350,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1318843262888037820, guid: 43f33967bb0464327a348cc227456350,
         type: 3}
