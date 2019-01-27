@@ -345,6 +345,8 @@ MonoBehaviour:
   - {fileID: 4957538291888705179}
   _sleepTimeText: {fileID: 3100377594018040798}
   _dayText: {fileID: 7256666842460322232}
+  _starSound: jingle01
+  _winSound: fanfare01
 --- !u!1 &2180863359656547649
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3022970981208986575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -636,11 +638,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -860,7 +862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4957538291830240183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1141,11 +1143,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1306,7 +1308,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1463,11 +1465,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1672,30 +1674,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3755666056414598328, guid: 973b15008f6dd48749d79907029b1caf,
-        type: 3}
-      propertyPath: m_Value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7757831346881169414, guid: 973b15008f6dd48749d79907029b1caf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757831346881169414, guid: 973b15008f6dd48749d79907029b1caf,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2475778529462106085, guid: 973b15008f6dd48749d79907029b1caf,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2475778529462106085, guid: 973b15008f6dd48749d79907029b1caf,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7331239431203974, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1708,10 +1700,6 @@ PrefabInstance:
     - target: {fileID: 7331239599689500, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -264
-      objectReference: {fileID: 0}
-    - target: {fileID: 7331239599689500, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00001502
       objectReference: {fileID: 0}
     - target: {fileID: 7331239054453660, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1729,8 +1717,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 448
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3057049202658159624, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 973b15008f6dd48749d79907029b1caf, type: 3}
 --- !u!224 &5749232158621119410 stripped
 RectTransform:

@@ -10,7 +10,7 @@ public class DifficultyManager : MonoBehaviour
     {
         get
         {
-            return DayNames[Day];
+            return DayNames[Day % DayNames.Length];
         }
     }
 

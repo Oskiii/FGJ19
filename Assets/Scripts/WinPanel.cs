@@ -23,6 +23,11 @@ public class WinPanel : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _dayText;
 
+    [SerializeField]
+    private string _starSound;
+    [SerializeField]
+    private string _winSound;
+
     public static WinPanel Instance;
 
     private void Awake()
@@ -42,6 +47,8 @@ public class WinPanel : MonoBehaviour
     {
         _panel.SetActive(true);
         _bg.SetActive(true);
+
+        AudioManager.Instance.Play(_winSound);
 
         _dayText.text = DifficultyManager.Instance.DayString + " night";
 
@@ -77,6 +84,7 @@ public class WinPanel : MonoBehaviour
 
     private void UnlockStar(int star)
     {
+        AudioManager.Instance.Play(_starSound);
         _stars[star].transform.DOScale(Vector2.one, 0.4f)
             .SetEase(Ease.OutBack);
     }

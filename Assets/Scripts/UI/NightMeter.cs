@@ -45,7 +45,10 @@ public class NightMeter : MonoBehaviour
             .SetEase(Ease.InOutCubic)
             .OnStart(() =>
             {
-                TimePanel.Instance.Show($"{_currentHourIndex}:00 AM", _currentHourIndex + 1);
+                if (_currentHourIndex < _hourCount)
+                {
+                    TimePanel.Instance.Show($"{_currentHourIndex}:00 AM", _currentHourIndex + 1);
+                }
             })
             .OnComplete(() =>
             {
