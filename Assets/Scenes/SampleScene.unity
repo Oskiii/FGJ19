@@ -1569,6 +1569,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5295470745195659533, guid: 4b8d5b51783b541beb7abc62327964dc,
+        type: 3}
+      propertyPath: m_Name
+      value: HurtOverlay
+      objectReference: {fileID: 0}
     - target: {fileID: 1785847824048293768, guid: 4b8d5b51783b541beb7abc62327964dc,
         type: 3}
       propertyPath: m_Name
