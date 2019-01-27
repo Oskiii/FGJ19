@@ -22,7 +22,6 @@ public class BasicBullet : MonoBehaviour
         var health = other.gameObject.GetComponent<Health>();
         if (health == null) return;
 
-
         FindObjectOfType<AudioManager>().Play(hitSFX);
         FindObjectOfType<AudioManager>().ChangePitch(hitSFX, Random.Range(0.85f, 1.15f));
 

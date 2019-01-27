@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class HitEffects : MonoBehaviour
@@ -9,10 +10,10 @@ public class HitEffects : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
-        GetComponentInParent<Health>().OnDamage += Flash;
+        GetComponentInParent<Health>().OnDamage += OnDamage;
     }
 
-    private void Flash()
+    private void OnDamage()
     {
         _animator.SetTrigger("hit");
     }
