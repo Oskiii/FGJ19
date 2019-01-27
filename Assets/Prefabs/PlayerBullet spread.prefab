@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8129329447185768654}
   - component: {fileID: 8272405536637009152}
   m_Layer: 9
-  m_Name: PlayerBullet
+  m_Name: PlayerBullet spread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300024, guid: 51908d19fe02841408df5e536aac0d8d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300006, guid: 51908d19fe02841408df5e536aac0d8d, type: 3}
+  m_Color: {r: 1, g: 0.9789366, b: 0.8160377, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 0.75}
+    oldSize: {x: 0.4375, y: 0.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9562db99cb744430bb8099abc7c6d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 2
+  _damage: 7
   hitSFX: hit01
 --- !u!114 &8129329447185768654
 MonoBehaviour:
