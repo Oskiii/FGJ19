@@ -16,7 +16,9 @@ public class HealUpSpawner : MonoBehaviour {
   IEnumerator SpawnHealUps () {
     yield return new WaitForSeconds (spawnWait);
     while (true) {
-      Quaternion spawnRotation = Quaternion.identity;
+            int randome = Random.Range(5, 7);
+            FindObjectOfType<AudioManager>().Play("snore0" + randome);
+            Quaternion spawnRotation = Quaternion.identity;
       Instantiate (_healUp.gameObject, transform.position, spawnRotation);
       yield return new WaitForSeconds (spawnWait);
     }

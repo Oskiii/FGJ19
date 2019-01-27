@@ -11,7 +11,7 @@ public class MusicScript2 : MonoBehaviour
     void Start()
     {
         myAudio = GetComponent<AudioSource>();
-        Invoke("audioFinished", myAudio.clip.length -0.5f);
+        Invoke("audioFinished", myAudio.clip.length );
     }
 
     void audioFinished()

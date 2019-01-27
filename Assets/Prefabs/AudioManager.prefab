@@ -43,4 +43,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d29f0fe09b27ffa4b9fc84b47e0d39c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: player dead
+    clip: {fileID: 8300000, guid: 981233cd7d305924eadce0b2f60cc643, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: bleep1
+    clip: {fileID: 8300000, guid: fd30239568d3cff43bcab224e281d6b8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: bleep2
+    clip: {fileID: 8300000, guid: a504d977ae92dd34699a6e32bc735ebe, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: death01
+    clip: {fileID: 8300000, guid: cbce03fd374e2174592af39e37c36ac7, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: death02
+    clip: {fileID: 8300000, guid: 1d28531cfb46e4c4786f4f1cfd23d9c4, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: death03
+    clip: {fileID: 8300000, guid: 225da49a0139f47438e4db92eb514797, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: death04
+    clip: {fileID: 8300000, guid: 1c7ff7a0cbb06284baad2a88fdaf255e, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: powerup01
+    clip: {fileID: 8300000, guid: 76216c11cc260a2439c122cd8f946dbb, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: hit01
+    clip: {fileID: 8300000, guid: 949fdcda6830b854b8b71bbb6d3f0125, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: shoot01
+    clip: {fileID: 8300000, guid: 15e7bf95ab76d1a44a27f0b7b3d830dd, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: shoot02
+    clip: {fileID: 8300000, guid: d9a6f33506ebaaa4db8a0bd8d4d1098d, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: attack01
+    clip: {fileID: 8300000, guid: 3b9f37c677644dd469a53958dec84b12, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - name: blob01
+    clip: {fileID: 8300000, guid: 4ec04b9df74088e46abe7644ba1b9cff, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - name: jingle01
+    clip: {fileID: 8300000, guid: 8ac39dd16d7bed146ae29453b1f0a9f5, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: fanfare01
+    clip: {fileID: 8300000, guid: 5d2c3bdb129370e489ccf9461cad2e3c, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - name: open letter
+    clip: {fileID: 8300000, guid: 131fbd380d33c24419560f80461bff59, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: grunt02
+    clip: {fileID: 8300000, guid: 4933b7c89973ee24daa239f261ca31a7, type: 3}
+    volume: 0.7
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore01
+    clip: {fileID: 8300000, guid: 4518e93e4a917c64484c34f51ffaea37, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore02
+    clip: {fileID: 8300000, guid: 6fd82a436a1cb984aa4cea429aa9e879, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore03
+    clip: {fileID: 8300000, guid: 77990e56e9baf6842bc790433795460b, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore04
+    clip: {fileID: 8300000, guid: 7dfe95b1d973f244196f5a1d636bc341, type: 3}
+    volume: 0.8
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore05
+    clip: {fileID: 8300000, guid: 5e963f5b97853944180e09cc21d729f6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: snore06
+    clip: {fileID: 8300000, guid: 04a8be4eb9dbf7a48b5959b209e2a1ac, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
