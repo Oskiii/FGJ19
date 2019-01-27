@@ -84,6 +84,14 @@ public class WinPanel : MonoBehaviour
             .OnComplete(() => BounceStars());
     }
 
+    private void Update()
+    {
+        if (_panel.activeInHierarchy && (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Submit")))
+        {
+            NextNight();
+        }
+    }
+
     private void UnlockStar(int star)
     {
         AudioManager.Instance.Play(_starSound);
