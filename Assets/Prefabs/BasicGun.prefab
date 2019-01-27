@@ -128,7 +128,7 @@ MonoBehaviour:
   _muzzlePoint: {fileID: 4333536842876430244}
   _shootForce: 0.145
   _shootCooldown: 0.1
-  shootSFX: shoot2
+  shootSFX: shoot02
 --- !u!114 &3853762986685832490
 MonoBehaviour:
   m_ObjectHideFlags: 0
